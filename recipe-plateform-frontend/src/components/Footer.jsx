@@ -303,10 +303,10 @@ const Footer = () => {
           </p>
 
           <div className="social-row">
-            <a href="#" className="social-icon"><FaInstagram /></a>
-            <a href="#" className="social-icon"><FaYoutube /></a>
-            <a href="#" className="social-icon"><FaWhatsapp /></a>
-            <a href="#" className="social-icon"><FaLinkedin /></a>
+            <a href="https://instagram.com" className="social-icon"><FaInstagram /></a>
+            <a href="https://youtube.com" className="social-icon"><FaYoutube /></a>
+            <a href="https://wa.me/919876543210" className="social-icon"><FaWhatsapp /></a>
+            <a href="https://linkedin.com" className="social-icon"><FaLinkedin /></a>
           </div>
         </div>
 
