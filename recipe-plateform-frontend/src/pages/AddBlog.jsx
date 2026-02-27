@@ -346,7 +346,7 @@ const AddBlog = () => {
       editor.removeEventListener("click", onEditorClick);
       window.removeEventListener("keydown", onKeyDown);
     };
-  }, []);
+  }, [selectImage]);
 
   // reposition panel on resize
   useEffect(() => {
@@ -366,7 +366,7 @@ const AddBlog = () => {
     applyImageStyle(selectedImg, { pct: imgWidthPct, align: imgAlign });
     const editorWidth = editorRef.current ? editorRef.current.clientWidth : null;
     if (editorWidth) setImgWidthPx(Math.round((imgWidthPct / 100) * editorWidth));
-  }, [imgWidthPct, imgAlign]);
+  }, [imgWidthPct, imgAlign, selectedImg]);
 
   // apply px change
   useEffect(() => {
@@ -376,7 +376,7 @@ const AddBlog = () => {
       const editorWidth = editorRef.current ? editorRef.current.clientWidth : null;
       if (editorWidth) setImgWidthPct(Math.round((imgWidthPx / editorWidth) * 100));
     }
-  }, [imgWidthPx, imgAlign]);
+  }, [imgWidthPx, imgAlign, selectedImg]);
 
   // presets
   const applyPreset = (preset) => {
