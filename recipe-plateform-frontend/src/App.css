@@ -1,0 +1,76 @@
+@import "react-quill/dist/quill.snow.css";
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #ff7043;
+  padding: 1rem;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f2f2f2;
+  margin-top: 2rem;
+}
+
+.recipe-list {
+  padding: 2rem;
+}
+
+.recipe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.recipe-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #ff7043;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.auth-form,
+.add-recipe,
+.recipe-details {
+  padding: 2rem;
+}
+
+.auth-form input,
+.add-recipe input,
+.add-recipe textarea {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+}
